@@ -190,11 +190,13 @@ public class FreeLance
 	{
 		return Info.size();
     }
-	
+	//User adds there bio
 	public void addBio(int ID, String bio)
 	{
 		Info.get(ID).bio = bio;
 	}
+	
+	//User gets there bio
 	public String getBio(int ID)
 	{
 		return Info.get(ID).bio;
