@@ -6,12 +6,24 @@ public class FreeLance
 	List<Person> Info;
 	HashMap<String,Integer> passwords;
 	int IDcount;
-	public FreeLance()
+        private static FreeLance myFreelance = null;
+        
+	private FreeLance()
 	{
 		Info = new ArrayList<Person>();
 		passwords = new HashMap<String,Integer>();
 		IDcount = 0;
 	}
+        
+        public static FreeLance getInstance()
+        {
+            if (myFreelance == null)
+            {
+                myFreelance = new FreeLance();
+                
+            }
+            return myFreelance;
+        }
 	//makes a new account
 	//takes dispay name and password
 	//returns person ID CAN NOT BE CHANGED
@@ -171,8 +183,12 @@ public class FreeLance
 		{
 			users[i] = Info.get(i).name;
 		}
-		return users.toString();
+		return Arrays.toString(users);
 	}
+        
+        public int getUserListCount() {
+            return Info.size();
+        }
 
 	
 	//the freelancer's information

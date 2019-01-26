@@ -38,7 +38,7 @@ http://www.templatemo.com/tm-496-pipeline
     </head>
     
     <%
-        FreeLance peopleDatabase = new FreeLance();
+        FreeLance peopleDatabase = FreeLance.getInstance();
         %>
     <body>
 
@@ -47,7 +47,13 @@ http://www.templatemo.com/tm-496-pipeline
               <section id="welcome" class="tm-content-box tm-banner margin-b-10">
                 <div class="tm-banner-inner">
                     <h1 class="tm-banner-title">Freelance Connect 2.0</h1>    
-                    <form action="signUpForm.jsp"><input type="submit" value="Sign Up!" name="signUpButton" /></form>
+                    <form action="signUpForm.jsp">
+                        <input type="submit" value="Sign Up!" name="signUpButton" />
+                    </form>
+                    
+                    <form action="home.jsp">
+                        <input type="submit" value="Home" name="signUpButton" />
+                    </form>
                 </div>                    
             </section>
 
@@ -87,6 +93,12 @@ http://www.templatemo.com/tm-496-pipeline
                 </div>
                 
                 <div class="tm-main-content">
+                    
+                     <div class="tm-box-pad tm-bordered-box">
+                            <h2 class="tm-section-title">Mauris sollicitudin a nibh ut sollicitudin</h2>
+                            <p>Pellentesque quam libero, hendrerit pretium feugiat sed, rhoncus ac nunc. Etiam eget dui vel ex eleifend mattis eget vitae risus. Nullam eu libero sit amet quam finibus condimentum. Aenean vulputate dictum suscipit. Morbi efficitur erat nulla, id tempor mi accumsan sed.</p>
+                            <a href="#" class="tm-button tm-button-normal">Read More</a>
+                        </div>
                       
                     <div id="gallery" class="tm-content-box">                        
                         <div class="grid tm-gallery">
@@ -167,17 +179,7 @@ http://www.templatemo.com/tm-496-pipeline
                             <h2 class="tm-section-title">Mauris sollicitudin a nibh ut sollicitudin</h2>
                             <p>Pellentesque quam libero, hendrerit pretium feugiat sed, rhoncus ac nunc. Etiam eget dui vel ex eleifend mattis eget vitae risus. Nullam eu libero sit amet quam finibus condimentum. Aenean vulputate dictum suscipit. Morbi efficitur erat nulla, id tempor mi accumsan sed.</p>
                             <a href="#" class="tm-button tm-button-normal">Read More</a>
-                        </div>
-                        <div class="tm-flex">
-                            <div class="tm-purple-bg tm-box-pad tm-bordered-box tm-no-border-top">
-                                <h2 class="tm-section-title">Cras volutpat fermentum</h2>
-                                <p>Aliquam ante sapien, tincidunt sed varius et, luctus condimentum sapien. Duis vel elit eu eros dapibus vestibulum vel vel nibh. Nulla id ornare eros.</p>
-                            </div>
-                            <div class="tm-gray-bg tm-box-pad tm-bordered-box tm-no-border-top">
-                                <h2 class="tm-section-title">Aenean vulputate dictum</h2>
-                                <p>Suspendisse ultricies egestas nulla, non vestibulum quam suscipit et. Sed sit amet enim ultricies, auctor nisl eu, porta augue. Cras et tristique augue.</p>
-                            </div>    
-                        </div>                        
+                        </div>                  
                     </div>
 
                     <section id="contact" class="tm-content-box">
