@@ -1,5 +1,6 @@
 package myPackage;
 import java.util.*;
+import java.lang.Math;
 public class FreeLance
 {       //test comment
 	List<Person> Info;
@@ -12,11 +13,54 @@ public class FreeLance
 	//makes a new account
 	//takes dispay name and password
 	//returns person ID CAN NOT BE CHANGED
+	
 	public int Add(String name, String password, String email, String type)
 	{
+		
 		Info.add(new Person(IDcount, name, password, email, type));
 		IDcount++;
 		return IDcount-1;
+	}
+	public ArrayList<Person> tagMatch(String tag)
+	{
+		ArrayList<Person> workers = new ArrayList<Person>();
+		for(int i = 0; i < Info.size(); i++)
+		{
+			if(Info.get(i).type.equals("freelancerTpye"))
+			{
+				if(findTag(Info.get(i).tags,tag))
+				{
+					workers.add(Info.get(i));
+				}
+			}
+		}
+		return workers;
+	}
+	
+	boolean findTag(ArrayList<String> tagList, String tag)
+	{
+		String tagText = tagList.toArray().toString();
+		int prime = 13;
+		int letters = 256;
+		int textSize = tagText.length();
+		int findSize = tag.length();
+		int hashText = 0;
+		int hashFind = 0;
+		
+		int h = (int)Math.pow(letters, findSize-1) %prime;
+		
+		for(int i = 0; i < findSize; i++)
+		{
+			hashFind = (letters*hashFind+tag.charAt(i))%prime;
+			hashText = (letters*hashText+tagText.charAt(i))%prime;
+			
+		}
+		
+		for(int i = 0; i <= textSize-findSize; i++)
+		{
+			
+		}
+		return false;
 	}
 	
 	//Adds one tag to the freelancers job description
@@ -24,6 +68,7 @@ public class FreeLance
 	//if user already has the tag it will return false
 	public boolean addTags(int ID, String tag)
 	{
+		
 		if(Info.get(ID).tags.contains(tag))
 		{
 			return false;
@@ -47,9 +92,15 @@ public class FreeLance
 	
 	//returns a string arraylist
 	//this arraylist contains the current tags of the freelancer
-	ArrayList getTags(int ID)
+	public String[] getTags(int ID)
 	{
-		return Info.get(ID).tags;
+		int length = Info.get(ID).tags.size();
+		String[] tags = new String[length];
+		for(int i = 0; i < length; i++)
+		{
+			tags[i] = Info.get(ID).tags.get(i);
+		}
+		return tags;
 	}
 	
 	//increase booking information
@@ -64,6 +115,9 @@ public class FreeLance
 	public class Person
 	{
 		int ID;
+		//customerType
+		//freelancerTpye
+		//investorType
 		String type;
 		String name;
 		String password;
