@@ -54,7 +54,7 @@ public class FreeLance
 	
 	
 	//the freelancer's information
-	class Person
+	public class Person
 	{
 		int ID;
 		String name;
