@@ -1,10 +1,10 @@
 package myPackage;
 import java.util.*;
 public class FreeLance
-{
+{       //test comment
 	List<Person> Info;
 	int IDcount;
-	FreeLance()
+	public FreeLance()
 	{
 		Info = new ArrayList<Person>();
 		IDcount = 0;
@@ -54,7 +54,7 @@ public class FreeLance
 	
 	
 	//the freelancer's information
-	class Person
+	public class Person
 	{
 		int ID;
 		String name;
