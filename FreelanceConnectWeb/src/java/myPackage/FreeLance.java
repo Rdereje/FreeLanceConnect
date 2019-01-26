@@ -52,6 +52,11 @@ public class FreeLance
 		return Info.get(ID).tags;
 	}
 	
+	//increase booking information
+	void newCust(int ID)
+	{
+		Info.get(ID).booking++;
+	}
 	
 	//the freelancer's information
 	public class Person
