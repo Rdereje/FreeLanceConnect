@@ -162,6 +162,17 @@ public class FreeLance
 		Info.get(ID).booking++;
 	}
 	
+	//returns a list of users' name
+	public String userList()
+	{
+		int size = Info.size();
+		String[] users = new String[size];
+		for(int i = 0; i < size; i++)
+		{
+			users[i] = Info.get(i).name;
+		}
+		return users.toString();
+	}
 
 	
 	//the freelancer's information
@@ -177,6 +188,7 @@ public class FreeLance
 		String email;
 		int booking;
 		int earned;
+		String bio;
 		ArrayList<String> tags;
 		Calendar cal;
 		ArrayList<boolean[]> free;
