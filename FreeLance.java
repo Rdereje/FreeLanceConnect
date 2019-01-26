@@ -51,6 +51,7 @@ public class FreeLance
 		return Info.get(ID).tags;
 	}
 	
+	
 	//the freelancer's information
 	class Person
 	{
@@ -61,7 +62,7 @@ public class FreeLance
 		int earned;
 		ArrayList<String> tags;
 		Calendar cal;
-		ArrayList<Times> free;
+		ArrayList<boolean[]> free;
 		int current;
 		Person(int ID, String name, String password)
 		{
@@ -72,19 +73,7 @@ public class FreeLance
 			earned = 0;
 			tags = new ArrayList<String>();
 			cal = Calendar.getInstance();
-			free = new ArrayList<Times>(90);
-		}
-	}
-	class Times
-	{
-		boolean Moring;
-		boolean Afternoon;
-		boolean Evening;
-		Times()
-		{
-			Moring = false;
-			Afternoon = false;
-			Evening = false;
+			free = new ArrayList<boolean[]>(90);
 		}
 	}
 }
