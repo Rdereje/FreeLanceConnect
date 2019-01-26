@@ -31,7 +31,10 @@ public class FreeLance
 	{
 		return Info.get(ID).tags.remove(tag);
 	}
-	
+	ArrayList getTags(int ID)
+	{
+		return Info.get(ID).tags;
+	}
 	class Person
 	{
 		int ID;
