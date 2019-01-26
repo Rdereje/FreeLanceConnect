@@ -4,12 +4,12 @@ import java.lang.Math;
 public class FreeLance
 {       //test comment
 	List<Person> Info;
-	HashSet<String> passwords;
+	HashMap<String,Integer> passwords;
 	int IDcount;
 	public FreeLance()
 	{
 		Info = new ArrayList<Person>();
-		passwords = new HashSet<String>();
+		passwords = new HashMap<String,Integer>();
 		IDcount = 0;
 	}
 	//makes a new account
@@ -18,12 +18,16 @@ public class FreeLance
 	
 	public int Add(String name, String password, String email, String type)
 	{
-		if(passwords.contains(password))
+		if(passwords.containsKey(password))
 			return -1;
-		passwords.add(password);
+		passwords.put(password, IDcount);
 		Info.add(new Person(IDcount, name, password, email, type));
 		IDcount++;
 		return IDcount-1;
+	}
+	public int login(String password)
+	{
+		return passwords.get(password);
 	}
 	public ArrayList<Person> tagMatch(String tag)
 	{
