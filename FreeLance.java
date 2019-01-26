@@ -62,7 +62,7 @@ public class FreeLance
 		ArrayList<String> tags;
 		Calendar cal;
 		ArrayList<Times> free;
-		int current
+		int current;
 		Person(int ID, String name, String password)
 		{
 			this.ID = ID;
@@ -71,7 +71,7 @@ public class FreeLance
 			booking = 0;
 			earned = 0;
 			tags = new ArrayList<String>();
-			cal = Calendar.genInstance();
+			cal = Calendar.getInstance();
 			free = new ArrayList<Times>(90);
 		}
 	}
