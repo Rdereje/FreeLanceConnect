@@ -8,11 +8,30 @@ public class FreeLance
 		Info = new ArrayList<Person>();
 		IDcount = 0;
 	}
-	void Add(String name, String password)
+	int Add(String name, String password)
 	{
 		Info.add(new Person(IDcount, name, password));
 		IDcount++;
+		return IDcount-1;
 	}
+	boolean addTags(int ID, String tag)
+	{
+		if(Info.get(ID).tags.contains(tag))
+		{
+			return false;
+		}
+		Info.get(ID).tags.add(tag);
+		return true;
+	}
+	String getName(int ID)
+	{
+		return Info.get(ID).name;
+	}
+	boolean removeTags(int ID, String tag)
+	{
+		return Info.get(ID).tags.remove(tag);
+	}
+	
 	class Person
 	{
 		int ID;
