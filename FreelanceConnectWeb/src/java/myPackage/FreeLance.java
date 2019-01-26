@@ -57,7 +57,9 @@ public class FreeLance
 	{
 		Info.get(ID).booking++;
 	}
-	public void type(int ID, int type)
+	
+	//assigns 
+	public void type(int ID, String type)
 	{
 		Info.get(ID).type = type;
 	}
@@ -66,7 +68,7 @@ public class FreeLance
 	public class Person
 	{
 		int ID;
-		int type;
+		String type;
 		String name;
 		String password;
 		String email;
