@@ -186,9 +186,19 @@ public class FreeLance
 		return Arrays.toString(users);
 	}
         
-        public int getUserListCount() {
-            return Info.size();
-        }
+    public int getUserListCount() 
+	{
+		return Info.size();
+    }
+	
+	public void addBio(int ID, String bio)
+	{
+		Info.get(ID).bio = bio;
+	}
+	public String getBio(int ID)
+	{
+		return Info.get(ID).bio;
+	}
 
 	
 	//the freelancer's information
