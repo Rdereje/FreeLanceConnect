@@ -2,28 +2,35 @@ package myPackage;
 import java.util.*;
 import java.lang.Math;
 public class FreeLance
-{       //test comment
+{   
 	List<Person> Info;
+	String customer;
+	String investor;
+	String freelancer;
 	HashMap<String,Integer> passwords;
 	int IDcount;
-        private static FreeLance myFreelance = null;
+    private static FreeLance myFreelance = null;
         
 	private FreeLance()
 	{
 		Info = new ArrayList<Person>();
 		passwords = new HashMap<String,Integer>();
 		IDcount = 0;
+		
+		customer = "customerType";
+		investor = "investorType";
+		freelancer = "freelancerTpye";
 	}
         
-        public static FreeLance getInstance()
+    public static FreeLance getInstance()
+    {
+        if (myFreelance == null)
         {
-            if (myFreelance == null)
-            {
-                myFreelance = new FreeLance();
+            myFreelance = new FreeLance();
                 
-            }
-            return myFreelance;
         }
+        return myFreelance;
+    }
 	//makes a new account
 	//takes dispay name and password
 	//returns person ID CAN NOT BE CHANGED
@@ -46,7 +53,7 @@ public class FreeLance
 		ArrayList<Person> workers = new ArrayList<Person>();
 		for(int i = 0; i < Info.size(); i++)
 		{
-			if(Info.get(i).type.equals("freelancerTpye"))
+			if(Info.get(i).type.equals(freelancer))
 			{
 				if(findTag(Info.get(i).tags,tag))
 				{
@@ -153,9 +160,9 @@ public class FreeLance
 		return Info.get(ID).tags.remove(tag);
 	}
 	
-	//returns a string arraylist
-
-	//this arraylist contains the current tags of the freelancer
+	
+	//returns a string array
+	//this array contains the current tags of the freelancer
 	public String[] getTags(int ID)
 
 	{
@@ -190,11 +197,13 @@ public class FreeLance
 	{
 		return Info.size();
     }
-	
+	//User adds there bio
 	public void addBio(int ID, String bio)
 	{
 		Info.get(ID).bio = bio;
 	}
+	
+	//User gets there bio
 	public String getBio(int ID)
 	{
 		return Info.get(ID).bio;
