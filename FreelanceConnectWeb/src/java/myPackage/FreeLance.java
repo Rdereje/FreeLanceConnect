@@ -39,18 +39,32 @@ public class FreeLance
 	
 	boolean findTag(ArrayList<String> tagList, String tag)
 	{
+		//coverts the array list to a string array
 		String tagText = tagList.toArray().toString();
+		
+		//converts everything to lowercase values
 		tagText.toLowerCase();
 		tag.toLowerCase();
+		
+		//prime values
 		int prime = 13;
+		
+		//number of typeable characters
 		int letters = 256;
+		
+		//size of text file filled with all tags belonging to freelancer
 		int textSize = tagText.length();
+		
+		//size of tag being searched for
 		int findSize = tag.length();
 		int hashText = 0;
 		int hashFind = 0;
 		
+		
 		int h = (int)Math.pow(letters, findSize-1) %prime;
 		
+		//hash value for the tag being searched
+		//hash value of first box in text file
 		for(int i = 0; i < findSize; i++)
 		{
 			hashFind = (letters*hashFind+tag.charAt(i))%prime;
@@ -58,8 +72,10 @@ public class FreeLance
 			
 		}
 		
+		//the box will scroll through the text string till it finds a match
 		for(int i = 0; i <= textSize-findSize; i++)
 		{
+			//if hash values match will do a character by character comprasion
 			if(hashFind == hashText)
 			{
 				int j;
@@ -75,7 +91,8 @@ public class FreeLance
 					return true;
 				}
 			}
-			
+			//else it will subtract to first char from the has value and
+			//add the next char in
 			if(i < textSize-findSize)
 			{
 				hashText = (letters*(hashText-tagText.charAt(i)*h)+tagText.charAt(i+findSize))%prime;
