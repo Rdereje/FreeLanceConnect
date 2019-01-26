@@ -12,9 +12,9 @@ public class FreeLance
 	//makes a new account
 	//takes dispay name and password
 	//returns person ID CAN NOT BE CHANGED
-	public int Add(String name, String password)
+	public int Add(String name, String password, String email)
 	{
-		Info.add(new Person(IDcount, name, password));
+		Info.add(new Person(IDcount, name, password, email));
 		IDcount++;
 		return IDcount-1;
 	}
@@ -57,29 +57,37 @@ public class FreeLance
 	{
 		Info.get(ID).booking++;
 	}
+	public void type(int ID, int type)
+	{
+		Info.get(ID).type = type;
+	}
 	
 	//the freelancer's information
 	public class Person
 	{
 		int ID;
+		int type;
 		String name;
 		String password;
+		String email;
 		int booking;
 		int earned;
 		ArrayList<String> tags;
 		Calendar cal;
 		ArrayList<boolean[]> free;
 		int current;
-		Person(int ID, String name, String password)
+		Person(int ID, String name, String password, String email)
 		{
 			this.ID = ID;
 			this.name = name;
 			this.password = password;
+			this.email = email;
 			booking = 0;
 			earned = 0;
 			tags = new ArrayList<String>();
 			cal = Calendar.getInstance();
 			free = new ArrayList<boolean[]>(90);
+			
 		}
 	}
 }
