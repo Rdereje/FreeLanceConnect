@@ -46,7 +46,7 @@ public class FreeLance
 	}
 	
 	//returns a string arraylist
-	//this arraylist contains the current tags of the freelancer
+	//this arraylist contains the curent tags of the freelancer
 	ArrayList getTags(int ID)
 	{
 		return Info.get(ID).tags;

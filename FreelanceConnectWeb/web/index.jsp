@@ -38,6 +38,17 @@ http://www.templatemo.com/tm-496-pipeline
         FreeLance peopleDatabase = new FreeLance();
         %>
     <body>
+        
+        <header id="header">
+				<nav class="left">
+					<a href="#menu"><span>Menu</span></a>
+				</nav>
+				<a href="index.html" class="logo">intensify</a>
+				<nav class="right">
+					<a href="#" class="button alt">Log in</a>
+				</nav>
+	</header>
+
         <div class="container-fluid">
 
             <section id="welcome" class="tm-content-box tm-banner margin-b-10">
