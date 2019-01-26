@@ -8,6 +8,9 @@ public class FreeLance
 		Info = new ArrayList<Person>();
 		IDcount = 0;
 	}
+	//makes a new account
+	//takes dispay name and password
+	//returns person ID CAN NOT BE CHANGED
 	int Add(String name, String password)
 	{
 		Info.add(new Person(IDcount, name, password));
@@ -43,6 +46,9 @@ public class FreeLance
 		int booking;
 		int earned;
 		ArrayList<String> tags;
+		Calendar cal;
+		ArrayList<Times> free;
+		int current
 		Person(int ID, String name, String password)
 		{
 			this.ID = ID;
@@ -51,6 +57,20 @@ public class FreeLance
 			booking = 0;
 			earned = 0;
 			tags = new ArrayList<String>();
+			cal = Calendar.genInstance();
+			free = new ArrayList<Times>(90);
+		}
+	}
+	class Times
+	{
+		boolean Moring;
+		boolean Afternoon;
+		boolean Evening;
+		Times()
+		{
+			Moring = false;
+			Afternoon = false;
+			Evening = false;
 		}
 	}
 }
