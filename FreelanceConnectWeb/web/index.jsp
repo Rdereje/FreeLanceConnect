@@ -25,6 +25,9 @@ http://www.templatemo.com/tm-496-pipeline
     <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
     <link rel="stylesheet" href="css/templatemo-style.css">                              <!-- Templatemo style -->
 
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/icons/apple-touch-icon-precomposed.png" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -38,20 +41,10 @@ http://www.templatemo.com/tm-496-pipeline
         FreeLance peopleDatabase = new FreeLance();
         %>
     <body>
-        
-        <header id="header">
-				<nav class="left">
-					<a href="#menu"><span>Menu</span></a>
-				</nav>
-				<a href="index.html" class="logo">intensify</a>
-				<nav class="right">
-					<a href="#" class="button alt">Log in</a>
-				</nav>
-	</header>
 
         <div class="container-fluid">
-
-            <section id="welcome" class="tm-content-box tm-banner margin-b-10">
+            
+              <section id="welcome" class="tm-content-box tm-banner margin-b-10">
                 <div class="tm-banner-inner">
                     <h1 class="tm-banner-title">Freelance Connect 2.0</h1>    
                     <form action="signUpForm.jsp"><input type="submit" value="Sign Up!" name="signUpButton" /></form>
@@ -317,3 +310,4 @@ http://www.templatemo.com/tm-496-pipeline
 
     </body>
 </html>
+
