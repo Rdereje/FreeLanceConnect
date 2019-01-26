@@ -4,15 +4,22 @@ import java.lang.Math;
 public class FreeLance
 {   
 	List<Person> Info;
+	String customer;
+	String investor;
+	String freelancer;
 	HashMap<String,Integer> passwords;
 	int IDcount;
-        private static FreeLance myFreelance = null;
+    private static FreeLance myFreelance = null;
         
 	private FreeLance()
 	{
 		Info = new ArrayList<Person>();
 		passwords = new HashMap<String,Integer>();
 		IDcount = 0;
+		
+		customer = "customerType";
+		investor = "investorType";
+		freelancer = "freelancerTpye";
 	}
         
     public static FreeLance getInstance()
@@ -46,7 +53,7 @@ public class FreeLance
 		ArrayList<Person> workers = new ArrayList<Person>();
 		for(int i = 0; i < Info.size(); i++)
 		{
-			if(Info.get(i).type.equals("freelancerTpye"))
+			if(Info.get(i).type.equals(freelancer))
 			{
 				if(findTag(Info.get(i).tags,tag))
 				{
