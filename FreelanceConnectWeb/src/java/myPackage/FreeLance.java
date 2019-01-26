@@ -2,7 +2,7 @@ package myPackage;
 import java.util.*;
 import java.lang.Math;
 public class FreeLance
-{       //test comment
+{   
 	List<Person> Info;
 	HashMap<String,Integer> passwords;
 	int IDcount;
@@ -15,15 +15,15 @@ public class FreeLance
 		IDcount = 0;
 	}
         
-        public static FreeLance getInstance()
+    public static FreeLance getInstance()
+    {
+        if (myFreelance == null)
         {
-            if (myFreelance == null)
-            {
-                myFreelance = new FreeLance();
+            myFreelance = new FreeLance();
                 
-            }
-            return myFreelance;
         }
+        return myFreelance;
+    }
 	//makes a new account
 	//takes dispay name and password
 	//returns person ID CAN NOT BE CHANGED
