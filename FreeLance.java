@@ -4,7 +4,7 @@ public class FreeLance
 {
 	List<Person> Info;
 	int IDcount;
-	FreeLance()
+	public FreeLance()
 	{
 		Info = new ArrayList<Person>();
 		IDcount = 0;
