@@ -40,6 +40,8 @@ public class FreeLance
 	boolean findTag(ArrayList<String> tagList, String tag)
 	{
 		String tagText = tagList.toArray().toString();
+		tagText.toLowerCase();
+		tag.toLowerCase();
 		int prime = 13;
 		int letters = 256;
 		int textSize = tagText.length();
