@@ -160,9 +160,9 @@ public class FreeLance
 		return Info.get(ID).tags.remove(tag);
 	}
 	
-	//returns a string arraylist
-
-	//this arraylist contains the current tags of the freelancer
+	
+	//returns a string array
+	//this array contains the current tags of the freelancer
 	public String[] getTags(int ID)
 
 	{
