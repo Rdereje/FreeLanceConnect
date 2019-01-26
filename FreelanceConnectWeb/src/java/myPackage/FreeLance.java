@@ -58,7 +58,31 @@ public class FreeLance
 		
 		for(int i = 0; i <= textSize-findSize; i++)
 		{
+			if(hashFind == hashText)
+			{
+				int j;
+				for(j = 0; j < findSize; j++)
+				{
+					if(tagText.charAt(i+j)!= tag.charAt(j))
+					{
+						break;
+					}
+				}
+				if(j == findSize)
+				{
+					return true;
+				}
+			}
 			
+			if(i < textSize-findSize)
+			{
+				hashText = (letters*(hashText-tagText.charAt(i)*h)+tagText.charAt(i+findSize))%prime;
+				
+				if(hashText<0)
+				{
+					hashText = (hashText+ prime);
+				}
+			}
 		}
 		return false;
 	}
