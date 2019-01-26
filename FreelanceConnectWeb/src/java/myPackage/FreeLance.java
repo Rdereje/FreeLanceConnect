@@ -138,8 +138,10 @@ public class FreeLance
 	}
 	
 	//returns a string arraylist
+
 	//this arraylist contains the current tags of the freelancer
 	public String[] getTags(int ID)
+
 	{
 		int length = Info.get(ID).tags.size();
 		String[] tags = new String[length];
