@@ -10,6 +10,12 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <html>
+    <head>
+		<title>Theory by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
 
 <% 
      out.println("function entered");
@@ -27,24 +33,21 @@
     
     String searchItem = request.getParameter("searchBar");
     
-    out.println("searchBar passed");
-    out.println("continue");
-    //create an arraylist
-    List<Person> searchedPeople;
-    searchedPeople = tagCreater.tagMatch(searchItem);
-    
-    out.println("searche people created");
-    if (searchedPeople.size() == 0 )
+    if (checkExistence)
     {
-        out.println("No User Found");
+        out.println("print stuff here");
     }
     else 
     {
-        
+         out.println("searchBar DEAD");
+    out.println("GOODNIGHT");
     }
-    
+
+    //create an arraylist
+
 
 %>
+
 
 
 </html>

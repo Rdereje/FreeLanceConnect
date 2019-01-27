@@ -21,14 +21,24 @@
             FreeLance tagCreater = FreeLance.getInstance();
                 //create an arraylist
             
-                String searchItem = request.getParameter("searchBar");
-    List<Person> searchedPeople;
-    searchedPeople = tagCreater.tagMatch(searchItem);
+            String searchItem = request.getParameter("searchBar");
+            
+            String[] searchedPeopleStrings = tagCreater.tagMatch(searchItem);
     
-    if (searchedPeople.size() == 0 )
+    if (searchedPeopleStrings.length > 0)
+    {
+        for (int i =0; i <= searchedPeopleStrings.length; i ++)
+        {
+            out.println(searchedPeopleStrings[i]);
+        }
+    }
+    out.println("searche people created");
+    if (searchedPeopleStrings.length == 0 )
     {
         out.println("No User Found");
     }
+            
+
             %>
     </body>
 </html>

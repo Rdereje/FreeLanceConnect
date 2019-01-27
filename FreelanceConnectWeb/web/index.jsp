@@ -22,7 +22,7 @@
                                          <form action="signUpForm.jsp" method="post"><input type="submit"
                    value="Start Now for Free!" class="btn btn-outline btn-xl js-scroll-trigger"/></form
 					</nav>
-                                        <form action="createTags.jsp"> 
+                                        <form action="searchBarCode.jsp"> 
                                         <input type="text" name="searchBar"value="Search"
                                                class="btn btn-outline btn-xl js-scroll-trigger"/></form>
                                             
@@ -45,18 +45,18 @@
 					<div class="flex flex-3">
 						<article>
 							<header>
-								<h3>Magna tempus sed amet<br /> aliquam veroeros</h3>
+								<h3>Customers</h3>
 							</header>
-							<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu.</p>
+							<p>Connect to freelancers in your area!</p>
 							<footer>
 								<a href="#" class="button special">More</a>
 							</footer>
 						</article>
 						<article>
 							<header>
-								<h3>Interdum lorem pulvinar<br /> adipiscing vitae</h3>
+								<h3>Entrepreneurs<br /> Investors</h3>
 							</header>
-							<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu.</p>
+							<p>Connect to customers and investors</p>
 							<footer>
 								<a href="#" class="button special">More</a>
 							</footer>
