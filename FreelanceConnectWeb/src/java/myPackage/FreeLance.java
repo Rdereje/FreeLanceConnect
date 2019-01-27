@@ -54,12 +54,12 @@ public class FreeLance
 	}
 	public String[]tagMatch(String tag)
 	{
-		ArrayList<Person> workers = new ArrayList<Person>();
+		ArrayList<String> workers = new ArrayList<String>();
 		for(int i = 0; i < Info.size(); i++)
 		{
 			if(findTagforReal(Info.get(i).tags,tag))
 			{
-				workers.add(Info.get(i));
+				workers.add(Info.get(i).name);
 			}
 			
 		}
@@ -68,7 +68,7 @@ public class FreeLance
 		String[] found = new String[size];
 		for(int i = 0; i < size; i++)
 		{
-			found[i] = workers.get(i).name;
+			found[i] = workers.get(i);
 		}
 		//if(workers.size() == 0)
 		//{
