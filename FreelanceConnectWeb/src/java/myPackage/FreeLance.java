@@ -59,7 +59,7 @@ public class FreeLance
 		{
 			if(Info.get(i).type.equals(freelancer))
 			{
-				if(findTag(Info.get(i).tags,tag))
+				if(findTagforReal(Info.get(i).tags,tag))
 				{
 					workers.add(Info.get(i));
 				}
@@ -78,7 +78,16 @@ public class FreeLance
 		//}
 		return found;
 	}
-	
+	boolean findTagforReal(ArrayList<String> tagList, String tag)
+	{
+		int size = tagList.size();
+		for(int i = 0; i < size; i++)
+		{
+			if(tagList.get(i).equals(tag))
+				return true;
+		}
+		return false;
+	}
 	boolean findTag(ArrayList<String> tagList, String tag)
 	{
 		//coverts the array list to a string array
