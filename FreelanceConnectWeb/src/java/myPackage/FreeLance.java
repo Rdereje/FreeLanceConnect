@@ -72,7 +72,7 @@ public class FreeLance
 	boolean findTag(ArrayList<String> tagList, String tag)
 	{
 		//coverts the array list to a string array
-		String tagText = tagList.toArray().toString();
+		String tagText = Arrays.toString(tagList.toArray());
 		
 		//converts everything to lowercase values
 		tagText.toLowerCase();
