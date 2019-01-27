@@ -208,6 +208,11 @@ public class FreeLance
 	{
 		return Info.get(ID).bio;
 	}
+	
+	public Person getPerson(int ID)
+	{
+		return Info.get(ID);
+	}
 
 	
 	//the freelancer's information
