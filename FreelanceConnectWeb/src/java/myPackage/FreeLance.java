@@ -57,13 +57,11 @@ public class FreeLance
 		ArrayList<Person> workers = new ArrayList<Person>();
 		for(int i = 0; i < Info.size(); i++)
 		{
-			if(Info.get(i).type.equals(freelancer))
+			if(findTagforReal(Info.get(i).tags,tag))
 			{
-				if(findTagforReal(Info.get(i).tags,tag))
-				{
-					workers.add(Info.get(i));
-				}
+				workers.add(Info.get(i));
 			}
+			
 		}
 		
 		int size = workers.size();
