@@ -41,6 +41,7 @@ public class FreeLance
 			return -1;
 		passwords.put(password, IDcount);
 		Info.add(new Person(IDcount, name, password, email, type));
+		Info.get(IDcount).tags.add(name);
 		IDcount++;
 		return IDcount-1;
 	}
