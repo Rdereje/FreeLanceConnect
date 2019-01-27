@@ -28,14 +28,19 @@
     String searchItem = request.getParameter("searchBar");
     
     out.println("searchBar passed");
-    
+    out.println("continue");
     //create an arraylist
     List<Person> searchedPeople;
     searchedPeople = tagCreater.tagMatch(searchItem);
     
+    out.println("searche people created");
     if (searchedPeople.size() == 0 )
     {
         out.println("No User Found");
+    }
+    else 
+    {
+        
     }
     
 
