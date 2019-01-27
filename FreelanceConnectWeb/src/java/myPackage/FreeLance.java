@@ -18,7 +18,7 @@ public class FreeLance
 		ran = new Random(); 
 		Info = new ArrayList<Person>();
 		passwords = new HashMap<String,Integer>();
-		IDcount = 3;
+		IDcount = 0;
 		fake = new Person(-666, "nothing", "password", "email", "type");
 		Add("Moon", "happy","happy@happy.com", "customerType");
 		Add("Sun", "cat","cat@cat.com", "freelancerTpye");
