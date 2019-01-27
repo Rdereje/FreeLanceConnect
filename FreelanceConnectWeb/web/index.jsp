@@ -31,11 +31,13 @@
 
   <body id="page-top">
 
-    <div class="header-content mx-auto">
-              <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-              <form action="signUpForm.jsp" method="post"><input type="submit"
-                   value="Start Now for Free!" class="btn btn-outline btn-xl js-scroll-trigger"/></form>
-            </div>
+    
   </body>
 
 </html>
+
+<div class="header-content mx-auto">
+              <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
+              <form action="signUpForm.jsp" method="post"><input type="submit"
+                   value="Start Now for Free!" class="btn btn-outline btn-xl js-scroll-trigger"/></form>
+    </div>

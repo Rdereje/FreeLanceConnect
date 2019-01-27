@@ -13,10 +13,15 @@
     FreeLance tagCreater = FreeLance.getInstance();
     
     String possibleTag = request.getParameter("userTag");
+    String password = request.getParameter("userPassword");
     
+    int userID = tagCreater.login(password);
     
-    boolean checkExistence = addTag(ID, possibleTag);
-    
+    boolean checkExistence = tagCreater.addTags(userID, possibleTag);
+    //login searches by password
     
     String tempTag = request.getParameter("userTag");
+    
+    
+    
 %>
