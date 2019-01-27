@@ -145,6 +145,8 @@ public class FreeLance
 	//if user already has the tag it will return false
 	public boolean addTags(int ID, String tag)
 	{
+		if(ID == -666)
+			return false;
 		
 		if(Info.get(ID).tags.contains(tag))
 		{
