@@ -62,6 +62,10 @@ public class FreeLance
 				}
 			}
 		}
+		if(workers.size() == 0)
+		{
+			workers.add(new Person(-666, "nothing", "password", "email", "type"));
+		}
 		return workers;
 	}
 	
