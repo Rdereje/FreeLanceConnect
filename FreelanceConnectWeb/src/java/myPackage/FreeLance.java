@@ -3,6 +3,7 @@ import java.util.*;
 import java.lang.Math;
 public class FreeLance
 {   
+	Random ran; 
 	List<Person> Info;
 	String customer;
 	String investor;
@@ -14,6 +15,7 @@ public class FreeLance
         
 	private FreeLance()
 	{
+		ran = new Random(); 
 		Info = new ArrayList<Person>();
 		passwords = new HashMap<String,Integer>();
 		IDcount = 0;
@@ -266,8 +268,8 @@ public class FreeLance
 			this.password = password;
 			this.email = email;
 			this.type = type;
-			booking = 0;
-			earned = 0;
+			booking = ran.nextInt(25)+1;
+			earned = ran.nextInt(1000000)+100;
 			tags = new ArrayList<String>();
 			cal = Calendar.getInstance();
 			free = new ArrayList<boolean[]>(90);
