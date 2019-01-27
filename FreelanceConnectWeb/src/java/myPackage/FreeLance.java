@@ -83,7 +83,7 @@ public class FreeLance
 		int size = tagList.size();
 		for(int i = 0; i < size; i++)
 		{
-			if(tagList.get(i).equals(tag))
+			if(tagList.get(i).toLowerCase().equals(tag.toLowerCase()))
 				return true;
 		}
 		return false;
