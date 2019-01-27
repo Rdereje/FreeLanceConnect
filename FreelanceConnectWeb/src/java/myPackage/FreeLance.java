@@ -47,7 +47,9 @@ public class FreeLance
 	}
 	public int login(String password)
 	{
-		return passwords.get(password);
+		if(passwords.containsKey(password))
+			return passwords.get(password);
+		return -666;
 	}
 	public ArrayList<Person> tagMatch(String tag)
 	{
