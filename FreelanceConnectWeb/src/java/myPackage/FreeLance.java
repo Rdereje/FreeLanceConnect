@@ -20,9 +20,9 @@ public class FreeLance
 		passwords = new HashMap<String,Integer>();
 		IDcount = 3;
 		fake = new Person(-666, "nothing", "password", "email", "type");
-		Info.add(new Person(0,"Moon", "happy","happy@happy.com", "customerType"));
-		Info.add(new Person(1,"Sun", "sad","sad@sad.com", "freelancerTpye"));
-		Info.add(new Person(2,"Star", "mad","mad@mad.com", "investorType"));
+		Add("Moon", "happy","happy@happy.com", "customerType");
+		Add("Sun", "cat","cat@cat.com", "freelancerTpye");
+		Add("Star", "mad","mad@mad.com", "investorType");
 		customer = "customerType";
 		investor = "investorType";
 		freelancer = "freelancerTpye";
