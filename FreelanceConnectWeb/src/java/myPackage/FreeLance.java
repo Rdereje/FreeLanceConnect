@@ -6,6 +6,7 @@ public class FreeLance
 	List<Person> Info;
 	String customer;
 	String investor;
+	Person fake;
 	String freelancer;
 	HashMap<String,Integer> passwords;
 	int IDcount;
@@ -16,7 +17,7 @@ public class FreeLance
 		Info = new ArrayList<Person>();
 		passwords = new HashMap<String,Integer>();
 		IDcount = 0;
-		
+		fake = new Person(-666, "nothing", "password", "email", "type");
 		customer = "customerType";
 		investor = "investorType";
 		freelancer = "freelancerTpye";
@@ -64,10 +65,10 @@ public class FreeLance
 				}
 			}
 		}
-		if(workers.size() == 0)
-		{
-			workers.add(new Person(-666, "nothing", "password", "email", "type"));
-		}
+		//if(workers.size() == 0)
+		//{
+			//workers.add(fake);
+		//}
 		return workers;
 	}
 	
@@ -139,7 +140,10 @@ public class FreeLance
 		}
 		return false;
 	}
-	
+	Person fake(int ID)
+	{
+		return fake;
+	}
 	//Adds one tag to the freelancers job description
 	//Can call add more
 	//if user already has the tag it will return false
