@@ -22,6 +22,10 @@
                                          <form action="signUpForm.jsp" method="post"><input type="submit"
                    value="Start Now for Free!" class="btn btn-outline btn-xl js-scroll-trigger"/></form
 					</nav>
+                                        <form action="createTags.jsp"> 
+                                        <input type="text" name="searchBar"value="Search"
+                                               class="btn btn-outline btn-xl js-scroll-trigger"/></form>
+                                            
                                         
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
