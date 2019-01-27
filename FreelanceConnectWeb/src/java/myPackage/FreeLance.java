@@ -52,7 +52,7 @@ public class FreeLance
 			return passwords.get(password);
 		return -666;
 	}
-	public ArrayList<Person> tagMatch(String tag)
+	public String[]tagMatch(String tag)
 	{
 		ArrayList<Person> workers = new ArrayList<Person>();
 		for(int i = 0; i < Info.size(); i++)
@@ -65,11 +65,18 @@ public class FreeLance
 				}
 			}
 		}
+		
+		int size = workers.size();
+		String[] found = new String[size];
+		for(int i = 0; i < size; i++)
+		{
+			found[i] = workers.get(i).name;
+		}
 		//if(workers.size() == 0)
 		//{
 			//workers.add(fake);
 		//}
-		return workers;
+		return found;
 	}
 	
 	boolean findTag(ArrayList<String> tagList, String tag)
