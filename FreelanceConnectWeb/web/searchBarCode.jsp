@@ -18,7 +18,8 @@
         <h1>Searching!</h1>
         
         <% 
-            FreeLance tagCreater = FreeLance.getInstance();
+           
+             FreeLance tagCreater = FreeLance.getInstance();
                 //create an arraylist
             
             String searchItem = request.getParameter("searchBar");
@@ -27,7 +28,7 @@
     
     if (searchedPeopleStrings.length > 0)
     {
-        for (int i =0; i <= searchedPeopleStrings.length; i ++)
+        for (int i =0; i < searchedPeopleStrings.length; i ++)
         {
             out.println(searchedPeopleStrings[i]);
         }
@@ -37,6 +38,31 @@
     {
         out.println("No User Found");
     }
+            
+           
+        
+            
+           /*
+                 FreeLance tagCreater = FreeLance.getInstance();
+                //create an arraylist
+            
+            String searchItem = request.getParameter("searchBar");
+            
+            String searchedPeopleStrings = tagCreater.tagMatch(searchItem);
+    
+    if (searchedPeopleStrings.isEmpty())
+    {
+        
+    }
+    else
+    {
+      
+            out.println(searchedPeopleStrings);
+        
+    }
+    out.println("searche people ended");
+            */
+ 
             
 
             %>

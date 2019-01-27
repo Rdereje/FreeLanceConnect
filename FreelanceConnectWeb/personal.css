@@ -1,0 +1,689 @@
+
+* {margin:0; padding:0;
+   font-family:"SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+   text-align:center;
+}
+
+
+/*For Reference: tablet display with min-width: 37.5em and max-width: 64em,
+and desktop display with min-
+width: 64em. Using*/
+
+/*suggested size:1600×800 pixels */
+
+#jumbo {background-color:#D6EAF8;
+
+}
+#jumbo img {width:100%; height:70%;}
+
+
+
+.contact {background-color:#D7BDE2;width:40%; 
+		  margin-left:auto; margin-right:auto;
+		  padding:0.5%; border-radius:3px;
+		 
+}
+
+.contact a{color:#EAF2F8;}
+
+.emphasis {color:#3498DB;}
+
+
+
+#flexbox-main-container
+{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center; 
+    align-items:stretch;
+    align-content:stretch;
+}
+
+#sahara-credit footer h6 {
+    font-size:0.4em;
+}
+
+#flexbox-main-item-nav, #flexbox-main-item-interests-item-nav
+{
+ 
+    order:initial;
+    flex: 0 1;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content:center;
+    align-items:center;
+    min-height:5vh;
+    background-color:rgba(64, 64, 64, 0.8);  
+    position:fixed;top:0;right:0;left:0;
+    border:0; border-style:none;
+}
+
+
+#flexbox-main-item-nav ul, #flexbox-main-item-interests-item-nav ul{
+    list-style-type:none;
+}
+
+
+#flexbox-main-item-nav  li, #flexbox-main-item-interests-item-nav li{
+    display:inline-block;
+}
+
+#flexbox-main-item-nav a:link, #flexbox-main-item-nav a:visited, 
+#flexbox-main-item-interests-item-nav a:link, #flexbox-main-item-interests-item-nav a:visited{/*margin:20px; padding:5px;*/
+		  border:10px;
+          font-size:1.1em; 
+          color:#FDFEFE;
+          margin:5%;
+          padding:3.5px;
+		  text-decoration:none;
+}
+
+
+#flexbox-main-item-hero
+{
+    order:initial;
+    flex: 1 1;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    min-height:90vh;
+    background-image: url(images/ballpen.jpg);
+    background-repeat: no-repeat;
+	background-origin: content-box;
+	background-size:cover;
+    color:#4d4d4d;
+}
+
+
+
+#flexbox-main-item-section1 {
+    display: flex;
+    flex: 1 1;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    min-height: 100vh;
+}
+
+#flexbox-main-item-section1-item-sidepanel
+{
+    display:flex;
+    flex-flow:row wrap;
+    flex:1 0;
+    justify-content:center;
+    align-content:space-between; 
+    align-items:center; 
+}
+
+#flexbox-main-item-section1-item-sidepanel a:link, #flexbox-main-item-section1-item-sidepanel a:visited {
+        display: block;
+        background-color: #EAF2F8;
+        color: #333333;
+        text-decoration: none;
+        /*margin:4%;padding:5%;*/
+    }
+
+#flexbox-main-item-section1-item-mainpanel
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:stretch;
+    color:#283747;
+    padding:1em;
+    
+}
+
+#flexbox-main-item-section1-item-mainpanel img
+{
+    height:34px; width:34px; margin-top:5px; 
+}
+
+#flexbox-main-item-section1-item-mainpanel h1 
+{
+    font-size:1.5em;
+}
+
+#flexbox-main-item-section1-item-mainpanel h3
+{
+    font-size:1em;
+}
+
+#flexbox-main-item-section1-item-mainpanel p
+{
+    font-size:0.8em;
+}
+
+
+#flexbox-main-item-divider
+{
+    order:initial;
+    flex: 1 1;
+    display:flex;flex-flow:column wrap;justify-content:center;align-items:center;
+    align-content:center;
+    background-color:#bfbfbf;
+}
+
+#flexbox-main-item-section2
+{
+    order:initial;
+    flex: 1 1;
+    flex-basis:%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center; 
+    align-items:center; 
+    align-content:space-around;
+    min-height:100vh;
+}
+
+
+
+
+#flexbox-main-item-section2-item-applets
+{
+    order:1;
+    background-image:linear-gradient(#D7BDE2,#EAF2F8);display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    min-width:100vw;
+    
+}
+#flexbox-main-item-section2-item-applets img
+{
+    max-width:20em;max-height:14.19em;
+}
+
+#flexbox-main-item-section2-item-linearalgebra
+{
+    order:2;
+    background-color:rgba(230, 230, 230,0.1);
+
+    width:20em;height:32em;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    min-width:100vw;
+}
+
+#flexbox-main-item-section2-item-linearalgebra img
+{
+   max-width:20em;max-height:20.13em;
+}
+
+#flexbox-main-item-section2-item-machinelearning
+{
+    order:3;
+    background-color:rgba(230, 230, 230,0.2);
+    width:20em;height:32em;display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    min-width:100vw;
+}
+
+#flexbox-main-item-section2-item-machinelearning img
+{
+    max-width:15.875em;max-height:19.563em;
+}
+
+#flexbox-main-item-section2-item-interests
+{
+    order:4;
+    background-color:rgba(230, 230, 230,0.5);
+    width:20em;height:32em;display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    min-width:100vw;
+}
+
+#flexbox-main-item-section2-item-interests img
+{
+    max-width:20em;max-height:9.375em;
+}
+
+#flexbox-main-item-gallery
+{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    min-height:100vh;
+    color:white;
+}
+
+
+.flexbox-main-item-gallery-item-assignment
+{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;min-height:17vh;min-width:46vw;
+    border-radius:10px; margin:2%;
+}
+
+
+.flexbox-main-item-gallery-item-assignment h1 
+{
+    font-size:0.8em;
+}
+
+.flexbox-main-item-gallery-item-assignment h3
+{
+    font-size:0.7em;
+}
+.flexbox-main-item-gallery-item-assignment a:visited,.flexbox-main-item-gallery-item-assignment a:link{
+    color:white;
+}
+
+
+#flexbox-resume-main-container
+{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center; 
+    align-items:center;
+    align-content:center;
+}
+
+#flexbox-main-item-resume
+{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:stretch;
+    align-content:center;
+
+    padding-top:6em;
+   
+}
+
+#flexbox-main-item-resume-item-nav
+{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    align-items:stretch;
+    align-content:center;
+
+    
+    
+    min-width:100vw;
+    background-image:linear-gradient(to bottom right,#003366,#006699);
+    color:white;
+    
+}
+
+#flexbox-main-item-resume-item-nav-item-header
+{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    
+
+    
+
+}
+
+.flexbox-main-item-resume-item-nav-item-links
+{
+    display:none;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content:center;
+    align-items:center;
+}
+
+.flexbox-main-item-resume-item-nav-item-links a:link, .flexbox-main-item-resume-item-nav-item-links a:visited {/*margin:20px; padding:5px;*/
+    border:10px;
+    font-size:1.1em; 
+    color:#FDFEFE;
+    margin:1%;
+    padding:3.5px;
+    text-decoration:none;
+}
+
+#flexbox-main-item-resume-item-nav-item-links-item-home
+{
+    
+}
+
+.flexbox-main-item-resume-item-nav-item-toggle
+{
+    display:flex;
+    align-self:flex-end;
+    display:initial;
+    cursor:pointer;
+}
+
+.Navbar__ToggleShow {
+    display: flex;
+    min-width:100vw;
+}
+
+#flexbox-main-item-resume-item-panel
+{
+     display:flex;
+    flex-flow:column nowrap;
+    justify-content:flex-start;
+    align-content:space-between;
+    text-align:left;
+    padding:1em;
+    
+
+
+}
+
+.flexbox-main-item-resume-item-panel-item-title, .flexbox-main-item-resume-item-panel-item-content li
+{
+    text-align:left;
+}
+
+.flexbox-main-item-resume-item-panel-item-header, .flexbox-main-item-resume-item-panel-item-subheading, .flexbox-main-item-resume-item-panel-item-title
+{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    padding:0.3em;
+}
+
+.flexbox-main-item-resume-item-panel-item-information, .flexbox-main-item-resume-item-panel-item-content
+{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between; 
+    align-items:flex-start; 
+    padding:0.5em;
+}
+
+
+.flexbox-main-item-resume-item-panel-item-header {font-size:0.9em;}
+.flexbox-main-item-resume-item-panel-item-information {font-size:0.7em;}
+.flexbox-main-item-resume-item-panel-item-subheading {font-style:italic; font-size:0.7em;}
+.flexbox-main-item-resume-item-panel-item-content ul {list-style-type:none;}
+
+.flexbox-main-item-darkhero
+{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:center;
+    align-content:space-between;
+
+    padding-top:3.5em;
+    background-color:black;
+    color:white;
+    min-height:80vh;
+    max-height:80vh;
+}
+
+.flexbox-main-item-darkhero-item-heading a:link,.flexbox-main-item-darkhero-item-heading a:visited,
+.flexbox-main-item-lighthero a:link, .flexbox-main-item-lighthero a:visited
+{
+    font-size:1em; 
+    color:#4da6ff;
+    text-decoration:none;
+}
+
+.flexbox-main-item-darkhero h1, .flexbox-main-item-darkhero h3 
+{
+    padding:0.3em;
+}
+
+.flexbox-main-item-lighthero
+{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:center;
+    align-content:space-between;
+
+    margin-top:1em;
+    background-color:#e6e6e6;
+    color:black;
+    min-height:80vh;
+    max-height:80vh;
+}
+
+.flexbox-main-item-darkhero-item-image-mobile img {width:18.750em; height:auto;}
+.flexbox-main-item-darkhero-item-image-desktop img {display:none;width:43.750em;height:auto;}
+
+#flexbox-interests-main-container
+{
+    display:flex;
+    flex-flow:column nowrap;
+
+     background-image:linear-gradient(#ccff99, #ff99cc);
+    background-attachment:fixed;
+    
+}
+
+#flexbox-interests-main-item-nav
+{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    
+    /*background-color:#262626;*/
+    height:100vh;
+    background-color:white;
+}
+
+#flexbox-main-item-interests-item-categories a:link, #flexbox-main-item-interests-item-categories a:visited
+{
+    color:black;
+    min-width:100%;
+    min-height:3em;
+    text-decoration:none;
+    display:block;
+}
+#flexbox-interests-main-item-nav a:hover
+{
+    background-color:#006666;
+}
+#flexbox-main-item-interests-item-nav-item-titles
+{
+    padding-top:]0;
+}
+
+#flexbox-main-item-interests-item-returnbutton
+{
+    margin-top:1.5em;
+}
+
+#flexbox-main-item-interests-item-returnbutton a:link,#flexbox-main-item-interests-item-returnbutton a:visited
+{
+    min-height:3em;
+    min-width:100%;
+    background-color:red;
+    border-radius:5px;
+    text-decoration:none;
+    padding-top:1em;padding-bottom:1em;
+    padding-right:3em;padding-left:3em;
+    
+}
+
+#flexbox-interests-main-item-content
+{
+    display:flex;
+    flex-flow:column nowrap;
+
+   
+    
+}
+#flexbox-interests-main-item-content-item-alltimemovies-wrapper
+{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+
+    
+}
+
+#flexbox-interests-main-item-content-item-entry
+{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:center;
+    margin-top:0.6em;margin-bottom:0.6em;
+    margin:0.6em;
+}
+#flexbox-interests-main-item-content-item-entry iframe
+{
+    /*width:250px;*/
+    width:10vw;
+    height:auto;
+}
+
+#flexbox-interests-main-item-content-item-entry img
+{
+    width:auto;height:10vh;
+}
+
+#flexbox-interests-main-item-content-item-alltimemovies,#flexbox-interests-main-item-content-item-topartists,
+#flexbox-interests-main-item-content-item-topcomedians,#flexbox-interests-main-item-content-item-topsongs,
+#flexbox-interests-main-item-content-item-toptvshows
+{
+    min-height:100vh;
+
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+
+    border-bottom:5px solid black;
+}
+
+#flexbox-interests-main-item-content-item-alltimemovies
+{
+    /*#ff9966;*/
+    
+}
+#flexbox-interests-main-item-content-item-topartists
+{
+    /*#66ffcc*/
+    
+}
+#flexbox-interests-main-item-content-item-topcomedians
+{
+    /*#99ff66*/
+    
+}
+#flexbox-interests-main-item-content-item-topsongs
+{
+    /*#ff6666*/
+    
+}
+#flexbox-interests-main-item-content-item-toptvshows
+{
+    /*orange*/
+    
+}
+
+/*For Desktop*/
+@media only screen and (min-width: 725px) 
+{
+    #flexbox-main-item-nav {font-size:17px;min-height:2.750em;}
+    #flexbox-main-item-nav li {margin-right:1.2em;margin-left:1.2em;}
+    #flexbox-main-item-nav a:link, #flexbox-main-item-nav a:visited{margin-right:8%;margin-left:8%;padding:2em;}
+
+
+    #flexbox-main-item-hero { min-height:35vh;background-image:url(images/ballpen.jpg);}
+
+    #flexbox-main-item-hero h1 {font-size:4.5em; background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+
+    #flexbox-main-item-section1 {min-height:40vh;flex-flow:row nowrap;}
+
+    #flexbox-main-item-section1-item-sidepanel {flex:0 1;flex-flow:column wrap;min-width:20vw;} 
+    #flexbox-main-item-section1-item-sidepanel a:link, #flexbox-main-item-section1-item-sidepanel a:visited {margin-bottom:0.5em;
+                                                                                                             margin-top:0.5em;border-radius:15px;}
+
+    #flexbox-main-item-section1-item-mainpanel {flex:0 1;min-width:25vw;}
+    #flexbox-main-item-section1-item-mainpanel img{height:128px; width:128px; margin-top:5px;}
+    #flexbox-main-item-section1-item-mainpanel h1 {display:none;}
+    #flexbox-main-item-section1-item-mainpanel h3 {display:none;}
+    #flexbox-main-item-section1-item-mainpanel p {display:none;}
+
+    #flexbox-main-item-divider {min-height:6vh;color:white;background-image:linear-gradient(to right,#a6a6a6,#e6e6e6);}
+
+    #flexbox-main-item-section2 {min-height:60vh;flex-flow:row wrap;}
+
+    #flexbox-main-item-section2-item-applets {min-width:20vw;min-height:50vh;width:20%;height:15em;margin-left:1em;margin-right:1em;
+                                              border-radius:15px;background-image:linear-gradient(rgba(48, 207, 208,0.5),rgba(51, 8, 103,0.5));}
+    #flexbox-main-item-section2-item-applets h1 {color:#f2f2f2;font-size:2em;}
+
+
+
+    #flexbox-main-item-section2-item-linearalgebra {min-width:20vw;min-height:50vh;width:20%;height:15em;margin-left:1em;margin-right:1em;
+                                                    border-radius:15px;}
+
+     #flexbox-main-item-section2-item-linearalgebra h1 {color:#666666;}
+
+
+
+    #flexbox-main-item-section2-item-machinelearning {min-width:20vw;min-height:50vh;width:20%;height:15em;margin-left:1em;margin-right:1em;
+                                                      border-radius:15px;background-image:linear-gradient(rgba(137, 51, 62,0.4),rgba(255, 153, 204,0.2));}
+
+
+    #flexbox-main-item-section2-item-interests {min-width:20vw;min-height:50vh;width:20%;height:15em;margin-left:1em;margin-right:1em;
+                                                border-radius:15px;}
+
+    #flexbox-main-item-section2-item-interests a:link, #flexbox-main-item-section2-item-interests a:visited{background: linear-gradient(to right, #30CFD0 0%, #ff6600 100%);
+                                                   -webkit-background-clip: text;-webkit-text-fill-color: transparent; font-size:3em; font-weight:bold;}
+
+    #flexbox-main-item-gallery{margin-top:9.67em;}
+    .flexbox-main-item-gallery-item-assignment {min-width:40vw;}
+    .flexbox-main-item-gallery-item-assignment h1 {font-size:1.5em;}
+    .flexbox-main-item-gallery-item-assignment h3 {font-size:1.2em;}
+
+
+    #flexbox-main-item-resume {flex-flow:row nowrap;align-items:stretch;min-width:70vw;min-height:60vh;}
+    #flexbox-main-item-resume-item-nav{flex-flow:column nowrap;justify-content:center;align-items:stretch;min-width:20vw;}
+
+    #flexbox-main-item-resume-item-nav-item-header {align-content:space-between;border-bottom:2px solid black;}
+    .flexbox-main-item-resume-item-nav-item-links {display:flex;}
+    .flexbox-main-item-resume-item-nav-item-links a {width:100%;}
+    .flexbox-main-item-resume-item-nav-item-links a:active {background-color:#336699;}
+    .flexbox-main-item-resume-item-nav-item-links a:hover {background-color:#336699;}
+
+    #flexbox-main-item-resume-item-nav-item-links-item-home {display:none;}
+
+    .flexbox-main-item-resume-item-nav-item-toggle {
+        display: none;
+    }
+    #flexbox-main-item-resume-item-panel {flex:1 0;border-top:1px solid black;border-right:1px solid black;border-bottom:1px solid black;max-width:60vw;}
+
+    .flexbox-main-item-darkhero {}
+    .flexbox-main-item-lighthero {flex-flow:row nowrap;}
+    .flexbox-main-item-darkhero-item-image-mobile {display:none;}
+    .flexbox-main-item-darkhero-item-image-desktop {display:block;}
+
+    #flexbox-interests-main-container{flex-flow:row nowrap;position:relative;}
+    #flexbox-interests-main-item-nav {min-width:40em;height:100vh;position:fixed;top:0;left:0px;bottom:0px;z-index:0;}
+    #flexbox-main-item-interests-item-nav {position:static;}
+    #flexbox-interests-main-item-content {height:100vh;margin-left:40em;width:100%;}
+
+    #flexbox-interests-main-item-content-item-alltimemovies-wrapper{flex-flow:row wrap;}
+
+    #flexbox-interests-main-item-content-item-alltimemovies,#flexbox-interests-main-item-content-item-topartists,
+    #flexbox-interests-main-item-content-item-topcomedians,#flexbox-interests-main-item-content-item-topsongs,
+    #flexbox-interests-main-item-content-item-toptvshows {}
+
+    #flexbox-interests-main-item-content-item-topsongs{}
+   
+   
+}
