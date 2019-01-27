@@ -52,16 +52,18 @@ public class FreeLance
 			return passwords.get(password);
 		return -666;
 	}
-	public String tagMatch(String tag)
+	public String[]tagMatch(String tag)
 	{
 		ArrayList<String> workers = new ArrayList<String>();
 		for(int i = 0; i < Info.size(); i++)
 		{
-			if(findTagforReal(Info.get(i).tags,tag))
+			if(Info.get(i).type.equals(freelancer))
 			{
-				workers.add(Info.get(i).name);
+				if(findTagforReal(Info.get(i).tags,tag))
+				{
+					workers.add(Info.get(i).name);
+				}
 			}
-			
 		}
 		
 		int size = workers.size();
@@ -74,7 +76,7 @@ public class FreeLance
 		//{
 			//workers.add(fake);
 		//}
-		return Arrays.toString(found);
+		return found;
 	}
 	boolean findTagforReal(ArrayList<String> tagList, String tag)
 	{
